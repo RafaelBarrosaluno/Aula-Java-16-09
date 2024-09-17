@@ -81,6 +81,13 @@ public class Produto2{
         System.out.println("Produto alterado!");
     }
     public void consultar_Produto(){
-        System.out.println("Detlahes do produto");
+        System.out.println("Detalhes do Produto:");
+        System.out.println("ID: " + idProduto);
+        System.out.println("Descrição: " + descProd);
+        System.out.println("Unidade: " + unProd);
+        System.out.println("Valor: " + valProd);
+        System.out.println("Data de Vencimento: " + (vencProd != null ? vencProd.toString() : "N/A"));
+        System.out.println("Status: " + statusProd);
+        System.out.println("Data de Cadastro: " + (dataCadProd != null ? dataCadProd.toString() : "N/A"));
     }
  }
