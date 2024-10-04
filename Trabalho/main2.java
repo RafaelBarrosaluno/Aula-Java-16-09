@@ -49,5 +49,6 @@ public class Main {
         System.out.println("Email: " + cliente.getEmail());
         System.out.println("Status: " + (cliente.getStatusCli() == 1 ? "Ativo" : "Inativo"));
         System.out.println("Data de Cadastro: " + cliente.getDataCadCli());
+           cliente.excluiCliente();
     }
 }
