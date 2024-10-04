@@ -1,9 +1,7 @@
-package trabalho_exemplo;
-
-import java.util.Date;
+package work;
 
 public class Cliente {
-    // Atributos privados
+   
     private int idCliente;
     private String nomeCli;
     private TipoDocumento tipoDocumento;
@@ -22,39 +20,39 @@ public class Cliente {
     private String telCel;
     private String email;
     private int statusCli;
-    private Date dataCadCli;
+    private String dataCadCli;
 
-    // Método para efetuar pedido
+   
     public void efetuaPedido() {
-        // Implementação aqui
+    	System.out.println("O " + nomeCli + " Cliente efetua um pedido ");
     }
 
-    // Método para efetuar pagamento
+    
     public void efetuaPagamento() {
-        // Implementação aqui
+    	System.out.println("O " + nomeCli + " efetuou o pagamento ");
     }
 
-    // Método para cadastrar cliente
+   
     public void cadastraCliente() {
-        // Implementação aqui
+    	System.out.println("O " + nomeCli + " foi cadastrado ");
     }
 
-    // Método para excluir cliente
+   
     public void excluiCliente() {
-        // Implementação aqui
+    	System.out.println("O " + nomeCli + " foi excluido ");
     }
 
-    // Método para alterar dados do cliente
+   
     public void alteraDados() {
-        // Implementação aqui
+    	System.out.println("O " + nomeCli + " alterou os seus dados ");
     }
 
-    // Método para consultar dados do cliente
+    
     public void consultaDados() {
-        // Implementação aqui
+    	System.out.println("O " + nomeCli + " consultou o seus dados  ");
     }
 
-    // Getters e Setters (opcionais) para acessar e modificar os atributos
+   
     public int getIdCliente() {
         return idCliente;
     }
@@ -199,16 +197,16 @@ public class Cliente {
         this.statusCli = statusCli;
     }
 
-    public Date getDataCadCli() {
+    public String getDataCadCli() {
         return dataCadCli;
     }
 
-    public void setDataCadCli(Date dataCadCli) {
+    public void setDataCadCli(String dataCadCli) {
         this.dataCadCli = dataCadCli;
     }
 }
 
-// Enum para TipoDocumento (precisa ser definido conforme o tipo de documento)
+
 enum TipoDocumento {
     CPF,
     CNPJ,
