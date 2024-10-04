@@ -1,16 +1,14 @@
-package trabalho_exemplo;
-
-import java.util.Date;
+package work;
 
 public class Main {
     public static void main(String[] args) {
-        // Instancia um objeto da classe Cliente
+        
         Cliente cliente = new Cliente();
 
-        // Define os valores dos atributos
+        
         cliente.setIdCliente(1);
         cliente.setNomeCli("João Silva");
-        cliente.setTipoDocumento(TipoDocumento.CPF); // Usando enum para o tipo de documento
+        cliente.setTipoDocumento(TipoDocumento.CPF); 
         cliente.setCodDocum(123456789);
         cliente.setRgCli(987654321);
         cliente.setEndereco("Rua Exemplo, 123");
@@ -25,16 +23,16 @@ public class Main {
         cliente.setDddCel(11);
         cliente.setTelCel("91234-5678");
         cliente.setEmail("joao.silva@example.com");
-        cliente.setStatusCli(1); // Status ativo, por exemplo
-        cliente.setDataCadCli(new Date()); // Data atual
+        cliente.setStatusCli(1); 
+        cliente.setDataCadCli("22/10/2024"); 
 
-        // Exemplo de uso de métodos da classe Cliente
+      
         cliente.cadastraCliente();
         cliente.efetuaPedido();
         cliente.efetuaPagamento();
         cliente.consultaDados();
 
-        // Exibe as informações do cliente
+       
         System.out.println("ID Cliente: " + cliente.getIdCliente());
         System.out.println("Nome: " + cliente.getNomeCli());
         System.out.println("Tipo de Documento: " + cliente.getTipoDocumento());
